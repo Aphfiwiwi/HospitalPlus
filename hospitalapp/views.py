@@ -22,3 +22,6 @@ def departments(request):
 def doctors(request):
     return render(request, 'doctors.html')
 
+def appointment(request):
+    return render(request, 'form.html')
+
