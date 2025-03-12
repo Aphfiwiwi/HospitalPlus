@@ -12,11 +12,14 @@
         <div class="card w-25 container p-3 shadow-lg">
         <p><b>Name: </b> {{ x.name }}</p>
         <p> <b>Email:</b>    {{ x.email}}</p>
+        <p> <b>Phone:</b>    {{ x.phone}}</p>
         <p><b>Date and time:</b>   {{ x.date }}</p>
         <p><b>Department:</b>   {{ x.department }}</p>
         <p><b>Doctor:</b>   {{ x.doctor }}</p>
+        <p><b></b>   {{ x.message }}</p>
+
         <p>
-            <a href="" class="text-success me-3">
+            <a href="{% url 'edit' x.id %}" class="text-success me-3">
                 <i class="bi bi-pencil"></i>Edit
             </a>
 
